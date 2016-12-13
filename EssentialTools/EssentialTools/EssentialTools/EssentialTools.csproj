@@ -207,7 +207,9 @@
     </Compile>
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DefaultDiscountHelper.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IDiscountHelper.cs" />
     <Compile Include="Models\IValueCalculator.cs" />
     <Compile Include="Models\LinqValueCalculator.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

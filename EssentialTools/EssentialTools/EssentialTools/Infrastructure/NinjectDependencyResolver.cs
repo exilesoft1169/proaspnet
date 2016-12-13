@@ -46,6 +46,7 @@ namespace EssentialTools.Infrastructure
         {
 
             kernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
+            kernel.Bind<IDiscountHelper>().To<DefaultDiscountHelper>().WithPropertyValue("DiscountSize",10m);
 
         }
 
