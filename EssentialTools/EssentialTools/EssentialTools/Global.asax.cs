@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EssentialTools.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,7 @@ namespace EssentialTools
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DependencyResolver.SetResolver(new NinjectDependencyResolver());
         }
     }
 }
